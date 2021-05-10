@@ -1,0 +1,141 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "28c71fc00a64d7836b62217ce52c92e5",
+    "entities": [
+      {
+        "tableName": "teamlist_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `team1` TEXT, `team2` TEXT, `team3` TEXT, `team4` TEXT, `team5` TEXT, `team6` TEXT, `team7` TEXT, `team8` TEXT, `team9` TEXT, `team10` TEXT, `team11` TEXT, `team12` TEXT, `team13` TEXT, `team14` TEXT, `team15` TEXT, `team16` TEXT, `team17` TEXT, `team18` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "team1",
+            "columnName": "team1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team2",
+            "columnName": "team2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team3",
+            "columnName": "team3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team4",
+            "columnName": "team4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team5",
+            "columnName": "team5",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team6",
+            "columnName": "team6",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team7",
+            "columnName": "team7",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team8",
+            "columnName": "team8",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team9",
+            "columnName": "team9",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team10",
+            "columnName": "team10",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team11",
+            "columnName": "team11",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team12",
+            "columnName": "team12",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team13",
+            "columnName": "team13",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team14",
+            "columnName": "team14",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team15",
+            "columnName": "team15",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team16",
+            "columnName": "team16",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team17",
+            "columnName": "team17",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "team18",
+            "columnName": "team18",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"28c71fc00a64d7836b62217ce52c92e5\")"
+    ]
+  }
+}

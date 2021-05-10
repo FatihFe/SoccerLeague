@@ -1,0 +1,93 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e371373a74a0a2be86d256dad2e7cd34",
+    "entities": [
+      {
+        "tableName": "fixture_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `week` TEXT, `match1` TEXT, `match2` TEXT, `match3` TEXT, `match4` TEXT, `match5` TEXT, `match6` TEXT, `match7` TEXT, `match8` TEXT, `match9` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "week",
+            "columnName": "week",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match1",
+            "columnName": "match1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match2",
+            "columnName": "match2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match3",
+            "columnName": "match3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match4",
+            "columnName": "match4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match5",
+            "columnName": "match5",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match6",
+            "columnName": "match6",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match7",
+            "columnName": "match7",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match8",
+            "columnName": "match8",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "match9",
+            "columnName": "match9",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"e371373a74a0a2be86d256dad2e7cd34\")"
+    ]
+  }
+}
